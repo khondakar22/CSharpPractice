@@ -22,7 +22,12 @@ namespace FindPair
             int sum = 10;
             int n = arr.Length;
 
+            // naive approach
+            // O(n^2) and space complexty O(1)
             findPair(arr, n, sum);
+
+            // O(nLog(n)) solution using Sorting
+            findPairAlternativWay(arr, n, sum);
         }
 
         //Naive method to find a pair in an array with given sum
@@ -43,6 +48,44 @@ namespace FindPair
             }
             // No pair with given sum exists in the array 
             Console.WriteLine("pair not found");
+        }
+        // The Idea is to sort the given array in ascending order and maintain search space by
+        // maintaining two indices(low and high)
+
+        public static void findPairAlternativWay(int[] arr, int n, int sum)
+        {
+            // Sort the array in ascending order
+            Array.Sort(arr);
+
+            // maintain two indices pointing to end-points of the array
+
+            int low = 0;
+            int high = n - 1;
+
+            // reduce search space arr[low..high] at each iteration of the loop
+
+            // loop till low is less than high
+            while(low < high)
+            {
+                // sum found
+                if(arr[low] + arr[high] == sum)
+                {
+                    Console.WriteLine("Pair Found");
+                    return;
+
+                }
+                // increment low index if total is less than the desired sum
+                // decrement high index is total is more than the sum
+                if (arr[low] + arr[high] < sum)
+                {
+                    low++;
+                } else {
+                    high--;
+                }
+                
+            }
+            // Now pair with given sum exists in the array
+            Console.WriteLine("Pair not found");
         }
     }
 }
