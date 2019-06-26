@@ -126,6 +126,14 @@ namespace FunctionsMethods
                 Console.Write("You are logged in");
             }
         }
+
+        public static void forLoopMethod()
+        {
+            for(int counter = 0; counter < 10; counter++)
+            {
+                Console.WriteLine(counter);
+            }
+        }
     }
 
 }

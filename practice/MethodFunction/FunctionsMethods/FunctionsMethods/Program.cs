@@ -18,7 +18,7 @@ namespace FunctionsMethods
 
 
             //UserInput.TryAndCatch();
-            UserInput.Login();
+            UserInput.forLoopMethod();
             Console.Read();
         }
 
