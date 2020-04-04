@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF 04C Events in XAML", "WPF 04C Events in XAML\WPF 04C Events in XAML.csproj", "{BE2781BF-0120-4F99-8B9B-403635F5A10B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE2781BF-0120-4F99-8B9B-403635F5A10B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE2781BF-0120-4F99-8B9B-403635F5A10B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE2781BF-0120-4F99-8B9B-403635F5A10B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE2781BF-0120-4F99-8B9B-403635F5A10B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED49CE3A-C596-4B19-9F84-62F0B01F9496}
+	EndGlobalSection
+EndGlobal
